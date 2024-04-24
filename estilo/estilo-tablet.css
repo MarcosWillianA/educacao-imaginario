@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoints 
+------------------------------
+Pequenas telas: até 600px 
+Celular: de 600px até 868px
+Tablet: 768px até 992px
+Destktop: 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    
+    #imagem-capa {
+        background-image: url(../img/capa02-tablet.png);
+        background-size: cover;
+        width: 100%;
+    }
+
+    #livros {
+        width: 90%;
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        align-content: space-between;
+
+    }
+}
+
+@media screen and (min-width: 992px) { 
+
+    header img {
+        background-image: url(../img/capa02-pc.png);
+        background-size: cover;
+        width: 100%;
+    }
+
+    #livros {
+        width: auto;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 20px;
+        justify-content: space-evenly;
+    }
+
+
+}
